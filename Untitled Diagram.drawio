@@ -1,9 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2024-03-05T00:07:32.907Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" version="24.0.1" etag="3lo0ZVU1FY3V4IL67Trm" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-05T02:58:07.334Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="8ZJh9ukPpOUect9-BiHc" version="24.0.1" type="github">
   <diagram name="Page-1" id="6nO8YPJqQkaOiOuP65gm">
-    <mxGraphModel>
+    <mxGraphModel dx="1529" dy="745" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-18" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="240" width="720" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4dA7L_3wkGxWSaqCTqfy-2" target="4dA7L_3wkGxWSaqCTqfy-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-2" value="Glide - FenixDeploymentSql" style="swimlane;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="320" width="270" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-3" value="&lt;div&gt;&lt;b&gt;Flink SQL:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;CREATE TABLE metrics&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;`metricType`&amp;nbsp; STRING,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;`metricValue` FLOAT,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;`device`&amp;nbsp; &amp;nbsp; &amp;nbsp; STRING,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;`timestamp`&amp;nbsp; &amp;nbsp;TIMESTAMP(3),&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;`user`&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; STRING,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ) WITH ( ...&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4dA7L_3wkGxWSaqCTqfy-2">
+          <mxGeometry x="15" y="100" width="210" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-22" value="&lt;div&gt;&lt;b&gt;UDFs:&lt;/b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;aggregate-udf@1.0.0::AggregateBy&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4dA7L_3wkGxWSaqCTqfy-2">
+          <mxGeometry x="15" y="40" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-6" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Fenix&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="4dA7L_3wkGxWSaqCTqfy-6" target="4dA7L_3wkGxWSaqCTqfy-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="459.5" as="sourcePoint" />
+            <mxPoint x="660" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-11" value="FlinkDeployment" style="shape=document;html=1;outlineConnect=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="4dA7L_3wkGxWSaqCTqfy-10">
+          <mxGeometry width="140" height="80" relative="1" as="geometry">
+            <mxPoint x="-70" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-17" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;Flink Job&lt;br&gt;&lt;br&gt;Sql Runner&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="640" y="360" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-19" value="&lt;b&gt;snowsk8s&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4dA7L_3wkGxWSaqCTqfy-24" target="4dA7L_3wkGxWSaqCTqfy-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-24" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="-145" y="40" width="325" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-25" value="&lt;b&gt;aggregate-udf.java&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4dA7L_3wkGxWSaqCTqfy-24">
+          <mxGeometry x="95" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-26" value="&lt;div&gt;import org.apache.flink.table.functions.ScalarFunction;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;public class AggregateBy extends ScalarFunction {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public Float eval(String field) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return ....&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4dA7L_3wkGxWSaqCTqfy-24">
+          <mxGeometry x="10" y="60" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4dA7L_3wkGxWSaqCTqfy-28" target="4dA7L_3wkGxWSaqCTqfy-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-28" value="&lt;b&gt;Jenkins&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4dA7L_3wkGxWSaqCTqfy-29" target="4dA7L_3wkGxWSaqCTqfy-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-33" value="&lt;b&gt;aggregate-udf.jar&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4dA7L_3wkGxWSaqCTqfy-32">
+          <mxGeometry x="-0.25" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4dA7L_3wkGxWSaqCTqfy-29" value="&lt;b&gt;Artifactory&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="120" height="200" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
